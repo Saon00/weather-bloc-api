@@ -69,16 +69,126 @@ class HomeScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    // location
                     Text('📍Dhaka', style: title),
                     SizedBox(height: 10),
+
+                    // greetings
                     Text('Good Morning',
                         style: title.copyWith(
                             fontSize: 25, fontWeight: FontWeight.w600)),
+
+                    // weather image
                     Image.asset('assets/images/1.png'),
+                    // temperature
                     Center(
                         child: Text('21°C',
                             style: title.copyWith(
                                 fontSize: 55, fontWeight: FontWeight.w600))),
+                    // weather condition
+                    Center(
+                        child: Text('Thunderstorm',
+                            style: title.copyWith(
+                                fontSize: 25, fontWeight: FontWeight.w600))),
+                    SizedBox(height: 5),
+                    // date time
+                    Center(
+                        child: Text('Friday 29 - 12:20 pm',
+                            style: title.copyWith(
+                                fontSize: 16, fontWeight: FontWeight.w300))),
+                    SizedBox(height: 30),
+
+                    // ui
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset('assets/images/11.png', scale: 8),
+                            SizedBox(width: 5),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Sunrise',
+                                    style: title.copyWith(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w300)),
+                                Text('5:34 am',
+                                    style: title.copyWith(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w700)),
+                              ],
+                            )
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Image.asset('assets/images/12.png', scale: 8),
+                            SizedBox(width: 5),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Sunset',
+                                    style: title.copyWith(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w300)),
+                                Text('5:34 am',
+                                    style: title.copyWith(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w700)),
+                              ],
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 10),
+                      child: Divider(color: Colors.grey),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset('assets/images/13.png', scale: 8),
+                            SizedBox(width: 5),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Temp Max',
+                                    style: title.copyWith(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w300)),
+                                Text('12°C',
+                                    style: title.copyWith(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w700)),
+                              ],
+                            )
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Image.asset('assets/images/13.png', scale: 8),
+                            SizedBox(width: 5),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Temp Min',
+                                    style: title.copyWith(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w300)),
+                                Text('8°C',
+                                    style: title.copyWith(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w700)),
+                              ],
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               )
