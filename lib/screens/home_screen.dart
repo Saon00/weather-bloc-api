@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 style: title.copyWith(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w300))),
-                        SizedBox(height: 30),
+                        SizedBox(height: 50),
 
                         // ui
                         Row(
